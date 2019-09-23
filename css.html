@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#liftdoorwarper{
+	display: flex;
+	background-color: lightblue;
+   overflow: hidden;
+}
+#upperliftdoorleft {
+   background-image: url(LiftTuereOben.gif);
+   height:382px;
+   width:150px;
+   transition: all 3s ease-in-out 200ms;
+   overflow: hidden;
+   z-index: 2;
+}
+
+#lowerliftdoorright {
+   background-image: url(LiftTuereUnten.gif);
+   padding-left: 5px;
+   margin-left: -5px;
+   background-size: 155px;
+   height:382px;
+   width:150px;
+   transition: all 3s ease-in-out;
+   z-index: 1;
+}
+/*
+#liftdoorwarper:hover > #upperliftdoorleft {
+   transform: translateX(-100%);
+}
+#liftdoorwarper:hover > #lowerliftdoorright {
+   transform: translateX(-195%);
+}
+*/
+</style>
+</head>
+<body>
+   click on the door
+<div id="liftdoorwarper" class="liftdoorclosed">
+   <div id="upperliftdoorleft"></div>
+   <div id="lowerliftdoorright"></div>
+</div>
+
+</body>
+<script src="liftdoor.js"></script>
+</html>
